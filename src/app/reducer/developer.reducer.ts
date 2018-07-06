@@ -11,6 +11,7 @@ const initialState: Developer = {
 export function developerReducer(state: Developer[] = [initialState], action: DeveloperActions.Actions) {
   switch(action.type) {
     case DeveloperActions.ADD_DEVELOPER:
+
       return [...state, action.payload];
     default:
       return state;

@@ -17,6 +17,7 @@ export class RemoveDeveloper {
   readonly type = REMOVE_DEVELOPER;
 
   constructor(public payload: Developer) {
+
   }
 }
 

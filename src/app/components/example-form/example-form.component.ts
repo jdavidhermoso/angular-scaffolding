@@ -17,7 +17,7 @@ export class ExampleFormComponent implements OnInit {
   newDeveloperForm: FormGroup;
   newDeveloperNameFormControl: FormControl;
   newDeveloperProgrammingLanguageFormControl: FormControl;
-  programmingLanguages: string[];
+  public programmingLanguages: string[];
 
   constructor(private store: Store<AppState>) {
     store.select('developer').subscribe((developers) => {
