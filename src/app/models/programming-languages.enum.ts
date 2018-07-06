@@ -1,0 +1,9 @@
+/* THIS ENUM FILE IS JUST AS EXAMPLE. DELETE IT TO START USING THIS SCAFFOLDING */
+export enum ProgrammingLanguages {
+  JAVA = 'JAVA',
+  JAVASCRIPT = 'JAVASCRIPT',
+  C = 'C',
+  GO = 'GO',
+  DART = 'DART',
+  SCALA = 'SCALA'
+}
