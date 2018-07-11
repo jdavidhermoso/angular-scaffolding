@@ -1,0 +1,34 @@
+<div class="developers">
+  <ul>
+    <li *ngFor="let dev of developers">
+      <span>
+        {{dev.name}}
+      </span>
+      {{dev.programmingLanguage}}
+    </li>
+  </ul>
+</div>
+
+<form [formGroup]="newDeveloperForm">
+  <div>
+    <label>
+      Developer name
+    </label>
+    <input type="text" placeholder="Developer name" formControlName="name" />
+  </div>
+  <div>
+    <label>
+      Developer programming language
+    </label>
+    <select formControlName="programmingLanguage">
+      <option *ngFor="let language of programmingLanguages">
+        {{language}}
+      </option>
+    </select>
+  </div>
+  <button (click)="addDeveloper()">
+    Add developer
+  </button>
+</form>
+
+
