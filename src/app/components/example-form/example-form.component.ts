@@ -10,7 +10,7 @@ import { ProgrammingLanguages } from '../../models/programming-languages.enum';
 @Component({
   selector: 'app-example-form',
   templateUrl: './example-form.component.html',
-  styleUrls: ['./example-form.component.css']
+  styleUrls: ['./example-form.component.scss']
 })
 export class ExampleFormComponent implements OnInit {
   developers: Developer[];
